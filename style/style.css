@@ -1,0 +1,965 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: liberation-serif, serif;
+    word-spacing: 4px;
+}
+
+html {
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: visible;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*-----------------------------------*/
+/* ------------Reusables-------------*/
+/*-----------------------------------*/
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.row {
+    margin: 0% 10%;
+}
+
+/*-----------------------------------*/
+/* --------------Header--------------*/
+/*-----------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),url(../images/eve_on_the_kitchen_floor/eve_on_the_kitchen_floor.png);
+    height: 100vh;
+    background-position: 0% 12%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+}
+
+.main-nav {
+    margin-right: 100px;
+    height: 10vh;
+}
+
+.main-nav li{
+    font-size: 25px;
+    text-decoration: none;
+    float: right;
+    margin-right: 60px;
+    margin: 30px 20px;
+    letter-spacing: -.5px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 1s;
+}
+
+.main-nav li:hover {
+    border-bottom: 3px solid #f76748;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #404040;
+}
+
+.banner {
+    font-size: 40px;
+    position: absolute;
+    margin-left: 50%;
+    font-weight: 100;
+    letter-spacing: -.5px;
+    margin-top: 10%;
+    color: #f76748;
+}
+
+.banner h1 {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    font-weight: 100;
+    letter-spacing: -1px;
+    font-size: 120px;
+}
+
+.banner p {
+    font-size: 45px;
+}
+
+/*-----------------------------------*/
+/*---------------Series--------------*/
+/*-----------------------------------*/
+
+header h2 {
+    float: left;
+    color: black;
+    font-size: 50px;
+    letter-spacing: -1.5px;
+    margin-top: 13px;
+    margin-left: 125px;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    text-decoration: underline;
+    opacity: .8;
+}
+
+.section-header {
+    color: #404040;
+    text-align: center;
+    margin: 80px;
+    font-size: 40px;
+    font-weight: 150;
+    letter-spacing: -1px;
+    text-decoration: underline;
+    text-decoration-color: #f76748;
+}
+
+.series {
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    display: inline;
+    width: 20%;
+    margin: 0 6.6%; 
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.art-series h3 {
+    font-size: 26px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    text-decoration: underline;
+    text-decoration-color: #f76748;
+    color: white;
+    font-weight: 100;
+    padding: 6px 0px;
+}
+
+.art-series .as1 {
+    background-image: url(../images/undergrad/fibersportrait-1.png);
+    background-size: 230%;
+    background-position: center;
+    transition: background-size 1s;
+}
+
+.as1 h3 {
+    padding: 30px 0px;
+}
+
+.art-series .as2 {
+    background-size: 280%;
+    background-position: 10% 5%;
+    background-image: url(../images/eve_on_the_kitchen_floor/eve_on_the_kitchen_floor.png);
+    transition: background-size 1s;
+}
+
+.art-series .as3 {
+    background-position: 53% 50%;
+    background-image: url(../images/new_one/untitled3.jpg);
+    background-size: 230%;
+    transition: background-size 1s;
+}
+
+.art-series .as1:hover {
+    background-size: 250%;
+}
+
+.art-series .as2:hover {
+    background-size: 300%;
+}
+
+.art-series .as3:hover{
+    background-size: 250%;
+}
+
+/*-----------------------------------*/
+/*-------------About Me--------------*/
+/*-----------------------------------*/
+
+.about-me {
+    background-color: #F8F8F8;
+    padding: 50px 0;
+}
+
+.portrait {
+    float: left;
+    width: 340px;
+    height: 700px;
+}
+
+.about-header {
+    color: white;
+    background-color: #404040;
+    padding-left: 65%;
+    padding-top: 40px;
+    height: 150px;
+    font-size: 55px;
+    font-weight: 50;
+    letter-spacing: -2px;
+    text-decoration: underline;
+    text-decoration-color: #f76748;
+}
+
+.about-me p {
+    text-indent: 50px;
+    font-size: 130%;
+    margin-left: 350px;
+    margin-right: 10px;
+    padding-top: 25px;
+    color: #404040;
+}
+
+.about-p {
+    background-color: white;
+    height: 550px;
+}
+
+/*-----------------------------------*/
+/*-------------Form--------------*/
+/*-----------------------------------*/
+
+.contact {
+    display: inline-block;
+    text-align: center;
+    margin: 0% 5%;
+    width: 39vw;
+}
+
+form {
+    display: inline-block;
+    float: left;
+    margin-left: 0%;
+    margin-bottom: 50px;
+}
+
+.contact form h2 {
+    color: #404040;
+    text-align: center;
+    margin: 80px;
+    font-size: 40px;
+    font-weight: 150;
+    letter-spacing: -2px;
+    text-decoration: underline;
+    text-decoration-color: #f76748;
+}
+
+.form-row {
+    width: 0%;
+    margin-bottom: 15px;
+    margin-left: 15%;
+}
+
+.form-row input,
+.form-row textarea{
+    width: 350px;
+    max-width: 350px;
+    min-width: 200px;
+    max-height: 350px;
+    font-size: 20px;
+}
+
+.form-messages {
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.success {background-color: rgba(167, 250, 160, 0.9)}
+.error {background-color: rgba(229, 51, 60, 0.9)}
+
+.form-row .submit {
+    color: #f76748;
+    cursor: pointer;
+    width: 0px;
+    margin-left: 60px;
+    height: 40px;
+    background-color: white;
+    border: 3px solid #f76748;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: color .5s, background-color .3s;
+}
+
+.form-row .submit:hover {
+    color: white;
+     background-color: #f76748;
+}
+
+/*-----------------------------------*/
+/*-----------Social Media------------*/
+/*-----------------------------------*/
+
+.media-links {
+    margin-bottom: 80px;
+}
+
+.media-links h2 {
+    color: #404040;
+    text-align: center;
+    margin: 80px 80px 80px 80px;
+    font-size: 40px;
+    font-weight: 150;
+    letter-spacing: -2px;
+    text-decoration: underline;
+    text-decoration-color: #f76748;
+}
+
+.media-links ul {
+    text-align: center;
+}
+
+.media-links ion-icon {
+    text-align: center;
+    font-size: 100px;
+    margin: 20px;
+    width: 105px;
+    padding: 10px;
+}
+
+.twitter:hover {
+    background-color: #00acee;
+    color: white;
+    border: 3px solid #00acee;
+    border-radius: 20px;
+}
+
+.twitter {
+    background-color: white;
+    color: #00acee;
+    border: 3px solid #00acee;
+    border-radius: 100px;
+    transition: border-radius 1s, color .5s, background-color .5s;
+}
+
+.instagram:hover {
+    background-image: linear-gradient(to bottom left, #833AB4, #C13584, #F56040, #FFDC80);
+    color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+.instagram {
+    background-image: linear-gradient(to bottom left, white, white);
+    background-color: white;
+    color: #F56040;
+    border: 3px solid #F56040;
+    border-radius: 100px;
+    transition: border-radius 1s, color .5s, background-image .5s, background-color .5s;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+    color: white;
+    border: 3px solid #3b5998;
+    border-radius: 20px;
+}
+
+.facebook {
+    background-color: white;
+    color: #3b5998;
+    border: 3px solid #3b5998;
+    border-radius: 100px;
+    transition: border-radius 1s, color .5s, background-color .5s;
+}
+
+.pintrest:hover {
+    background-color: #c8232c;
+    color: white;
+    border: 3px solid #c8232c;
+    border-radius: 20px;
+    
+}
+
+.pintrest {
+    background-color: white;
+    color: #c8232c;
+    border: 3px solid #c8232c;
+    border-radius: 100px;
+    transition: border-radius 1s, color .5s, background-color .5s;
+}
+
+/*-----------------------------------*/
+/*---------------Footer--------------*/
+/*-----------------------------------*/
+
+footer {
+    background-color: #404040;
+    color: white;
+}
+
+.footer-nav {
+    float: left;
+    margin: 50px;
+}
+
+.footer-nav li {
+    display: inline;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    letter-spacing: -1px;
+    border-bottom: 2px solid rgba(226, 93, 57, 0);
+    transition: border-bottom 1s;
+}
+
+.footer-nav a:hover {
+    border-bottom: 2px solid #f76748;
+}
+
+footer p {
+    padding-top: 130px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: white;
+}
+
+footer h4 {
+    float: right;
+    margin: 50px;
+    margin-right: 20px;
+    font-weight: 100;
+}
+
+/*-----------------------------------*/
+/*---------------Footer--------------*/
+/*-----------------------------------*/
+
+
+/* Laptops 2560 to 1660 */
+@media only screen and (max-width: 2560px) {
+    .about-p {
+        font-size: 19px;
+    }
+    
+    .series {
+        height: 700px;
+    }
+    
+    .series h3 {
+        margin-top: 650px;
+    }
+    
+    .as1 h3 {
+        padding: 6px 0;
+    }
+    
+    .media-links {
+        margin-right: 10%;
+    }
+    
+    form {
+        margin-left: 2%;
+    }
+}
+
+
+/* Laptops 1660 to 1440 */
+@media only screen and (max-width: 1660px) {
+    .about-p {
+        font-size: 17px;
+    }
+}
+
+/* Laptops 1440 to 1200px */
+@media only screen and (max-width: 1440px) {
+    
+    .series {
+        height: 500px;
+    }
+    
+    .series h3 {
+        margin-top: 414px;
+    }
+    
+    .as1 h3 {
+        margin-top: 413px;
+        padding: 25px 0;
+    }
+    
+    .about-p {
+        font-size: 16px;
+    }
+}
+
+    
+/* Laptops 1023 to 1200px */
+@media only screen and (max-width: 1200px) {
+    
+    .series {
+        width: 25%;
+        margin: 0 4%;
+        height: 450px;
+        margin-bottom: 60px;
+    }
+    
+    .art-series h3 {
+        margin-top: 358px;
+        font-size: 28px;
+        font-weight: 200;
+    }
+    .as1 h3 {
+        padding: 23px 0px;
+        margin-top: 364px;
+    }
+    
+    .portrait {
+        width: 240px;
+        height: 500px;
+    }
+    
+    .about-header {
+        padding-left: 60%;
+        padding-top: 25px;
+        height: 120px;
+        font-size: 45px;
+    }
+    
+    .about-me p {
+        text-indent: 40px;
+        font-size: 17px;
+        margin-left: 27%;
+        margin-right: 10px;
+        padding-top: 0px;
+    }
+    
+    .about-p {
+        height: 380px;
+    }
+    
+    form {
+        margin-left: -2%;
+    }
+    
+    .contact form h2 {
+        text-align: left;
+    }
+    
+    .form-row {
+        margin-left: 0%;
+    }
+    
+    .media-links {
+        margin-right: -2%;
+    }
+    
+    .media-links h2 {
+        margin: 80px 80px 80px 60px;
+    }
+    
+}
+
+
+
+/* Landscaped Tablets 767 to 1023px */
+@media only screen and (max-width: 1023px) {
+    
+    .banner {
+        margin-left: 40%;
+        margin-top: 12%;
+    }
+    
+    .series {
+        width: 28%;
+        margin: 0 2%;
+        height: 500px;
+        margin-bottom: 60px;
+    }
+    
+    .art-series h3 {
+        margin-top: 426px;
+        font-size: 22px;
+    }
+    
+    .as1 h3 {
+        padding: 18px 0px;
+        margin-top: 433px;
+    }
+    
+    .art-series .as3 {
+    background-position: 53% 50%;
+    background-size: 270%;
+    transition: background-size 1s;
+    }
+    
+    .art-series .as3:hover {
+    background-size: 300%;
+    }
+
+    .portrait {
+        width: 210px;
+        height: 450px;
+    }
+    
+    .about-p {
+        height: 330px;
+    }
+    
+    .about-me p {
+        text-indent: 30px;
+        font-size: 13px;
+        margin-left: 35%;
+        margin-right: 10px;
+        padding-top: 5px;
+    }
+    
+    form {
+        float: left;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .media-links {
+        float: right;
+    }
+    
+    .media-links h2 {
+        text-align: center;
+        margin: 80px 0px 80px 0px;
+    }
+    
+    .footer-nav {
+        margin: 50px 0px;
+    }
+    
+    footer h4 {
+        margin: 50px 0px;
+    }
+    
+}
+
+
+
+/* Phones and Small Tablets 480 to 767px */
+@media only screen and (max-width: 767px) {
+    
+    header h2 {
+        font-size: 40px;
+        margin-left: 25px;
+    }
+    
+    .main-nav {
+        margin-right: 20px;
+    }
+    
+    .main-nav li {
+        font-size: 20px;
+        margin-right: 25px;
+        margin: 30px 15px;
+    }
+    
+    header {
+        width: 110%;
+        height: 110vh;
+    }
+    
+    .banner {
+        margin-left: 36%;
+        margin-top: 40%;
+        font-weight: 600;
+    }
+    
+    .banner h1 {
+        font-size: 70px;
+    }
+    
+    .banner p {
+        font-size: 35px;
+    }
+    
+    section {
+        width: 110%;
+    }
+    
+    footer {
+        width: 110%;
+    }
+    
+    .series {
+        height: 400px;
+        width: 30.9%;
+        margin: 0 5px;
+        margin-bottom: 50px;
+    }
+    
+    .art-series h3 {
+        margin-top: 330px;
+        font-size: 20px;
+    }
+    .as1 h3 {
+      padding: 20px 0px;
+    }
+    
+    .art-series .as3 {
+        background-size: 300%;
+    }
+    
+    .art-series .as3:hover{
+        background-size: 320%;
+    }
+    
+    .portrait {
+        width: 160px;
+        height: 350px;
+    }
+    
+    .about-p {
+        height: 260px;
+    }
+    
+    .about-me p {
+        text-indent: 20px;
+        font-size: 9.2px;
+        margin-left: 27%;
+        margin-right: 10px;
+        padding-top: 0px;
+    }
+    
+    .about-header {
+        height: 90px;
+        font-size: 30px;
+    }
+    
+    form {
+        float: none;
+        vertical-align: top;
+    }
+    
+    .from-wrap {
+        display: block;
+        text-align: center;
+    }
+    
+    .contact .clearfix {
+        margin: 0;
+    }
+    
+    .contact form h2 {
+        font-size: 30px;
+        width: 200px;
+        text-align: center;
+        margin: 0px 0px 60px 0px;
+    }
+    
+    .media-links {
+        padding-bottom: 31px;
+    }
+    
+    .media-links ion-icon {
+        font-size: 75px;
+        width: 75px;
+    }
+    
+    .media-links h2 {
+        margin: 60px 0px 80px 0px;
+        font-size: 30px;
+    }
+    
+    .form-row input,
+    .form-row textarea{
+        width: 250px;
+        max-width: 250px;
+        min-width: 200px;
+        max-height: 50px;
+        font-size: 15px;
+    }
+    
+    .form-row .submit {
+        margin-left: 25px;
+    }
+    
+    footer {
+        width: 110%;
+    }
+    
+    .footer-nav {
+        text-align: center;
+        float: none;
+        margin: 50px;
+        width: 85%;
+    }
+    
+    footer h4 {
+        text-align: center;
+        float: none;
+        margin: 0px;
+    }
+    
+    footer p {
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    
+    footer a {
+        margin-top: 20px;
+    }
+    
+}
+
+
+
+/* Small Phones 0 to 480px */
+@media only screen and (max-width: 480px) {
+    
+    .main-nav li {
+        font-size: 20px;
+        margin: 30px 12px;
+    }
+    
+    header {
+        width: 120%;
+        height: 100vh;
+    }
+    
+    .banner {
+        margin-left: 0%;
+        font-size: 36px;
+        width: 120%;
+        text-align: center;
+        margin-top: 70%;
+    }
+    
+    section {
+        width: 120%;
+    }
+
+    .series {
+        width: 30.3%;
+        margin-bottom: 50px;
+        height: 250px;
+    }
+    
+    .section-header {
+        margin: 40px;
+    }
+    
+    .art-series h3 {
+        margin-top: 196px;
+        font-size: 15px;
+    }
+    .as1 h3 {
+      padding: 17px 0px;
+    }
+    
+    .art-series .as2 {
+        background-size: 200%;
+    }
+    
+    .art-series .as2:hover{
+        background-size: 220%;
+    }
+    
+    .portrait {
+        width: 120px;
+        height: 260px;
+    }
+    
+    .about-p {
+        height: 200px;
+    }
+    
+    .about-me p {
+        text-indent: 10px;
+        font-size: 7px;
+        margin-left: 29%;
+        margin-right: 10px;
+        padding-top: 0px;
+    }
+    
+    .about-header {
+        height: 60px;
+        font-size: 25px;
+        padding-top: 13px;
+    }
+    
+    .contact form h2 {
+        margin: 80px auto;
+    }
+    
+    .media-links {
+        margin-right: 0%;
+        text-align: center;
+        float: none;
+        width: 85vw;
+    }
+    
+    .media-links h2 {
+        margin: 80px auto;
+        width: 120%;
+    }
+    
+    .media-links ul {
+        width: 120%;
+    }
+    
+    .contact {
+        display: inline-block;
+        text-align: center;
+        margin: 0% 5%;
+    }
+    
+    .contact form h2 {
+        text-align: center;
+        margin: 80px;
+        font-size: 30px;
+        margin-left: 10%;
+    }
+    
+    .form-wrap {
+        padding-left: 18vw;
+    }
+    
+    footer {
+        width: 120%;
+    }
+}
+
+
+
+/* Phones and Small Tablets 320px */
+@media only screen and (max-width: 320px) {
+    
+    section,
+    header,
+    footer{
+        width: 130%;
+    }
+    
+    .banner {
+        font-size: 20px;
+    }
+    
+    .about-header {
+        height: 60px;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+}

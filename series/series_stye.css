@@ -1,0 +1,657 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: liberation-serif, serif;
+    word-spacing: 4px;
+}
+
+html {
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+}
+
+body {
+    overflow-x: visible;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    margin: 0% 10%;
+}
+
+
+/*-----------------------------------*/
+/* --------------Header--------------*/
+/*-----------------------------------*/
+
+.main-nav {
+    height: 10vh;
+    background-color: #404040;
+}
+
+.main-nav li{
+    font-size: 25px;
+    text-decoration: none;
+    float: right;
+    margin: 35px 70px 0px 0px;
+    letter-spacing: -.5px;
+    list-style: none;
+    text-decoration: none;
+}
+
+header h2 {
+    float: left;
+    color: white;
+    font-size: 50px;
+    letter-spacing: -1.5px;
+    margin-top: .5%;
+    margin-left: 125px;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    text-decoration: underline;
+    opacity: .8;
+}
+
+header ul {
+    padding-right: 100px;
+    background-color: #404040;
+}
+
+/*Change Per Series*/
+
+.eve li {
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 1s;
+}
+
+.eve li:hover {
+    border-bottom: 3px solid #4aaf75;
+}
+
+.plants li {
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 1s;
+}
+
+.plants li:hover {
+    border-bottom: 3px solid #ff1f1f;
+}
+
+.undergrad li {
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 1s;
+}
+
+.undergrad li:hover {
+    border-bottom: 3px solid #8f9ff0;
+}
+
+
+.main-nav a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    text-align: center;
+    height: 30vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.eve .banner {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0)) ,url(../images/eve_on_the_kitchen_floor/eve_on_the_kitchen_floor.png);
+    background-position: 0% 34%;
+}
+
+.eve .banner h1 {
+    padding-top: 100px;
+    font-size: 60px;
+    color: white;
+}
+
+.plants .banner {
+    background-image: url(../images/new_one/untitled3.jpg);
+    background-position: 0% 60%;
+}
+
+.plants .banner h1 {
+    padding-top: 100px;
+    font-size: 60px;
+    color: black;
+}
+
+.undergrad .banner {
+    background-image: url(../images/undergrad/fibersportrait-1.png);
+    background-position: 0% 40%;
+}
+
+.undergrad .banner h1 {
+    padding-top: 100px;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+
+/*-----------------------------------*/
+/* ----------------Art---------------  4aaf75  */
+/*-----------------------------------*/
+
+.art {
+    margin: 0;
+}
+
+.art-list {
+    text-align: center;
+}
+
+.art-list img{
+    width: 330px;
+}
+
+.painting {
+    margin: 50px 30px;
+    vertical-align: middle;
+}
+
+.painting p,
+.painting h3,
+.painting a {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.painting h3 {
+    top: 30%;
+    font-size: 40px;
+    width: 350px;
+    border: 2px solid white;
+}
+
+.painting a{
+    padding: 2px;
+    top: 80%;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.painting p {
+    width: 400px;
+    top: 55%;
+    transform: translate(-5%, -100%);
+    left: 20px;
+    bottom: 200px;
+}
+
+.painting .image-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transform: translate(0%, -100%);
+    opacity: 0;
+    transition: all .25s ease-in-out;
+    visibility: hidden;
+}
+
+.art-list .painting {
+    position: relative;
+    display: inline-block;
+}
+
+.painting:hover h3,
+.painting:hover a,
+.painting:hover p,
+.painting:hover .image-gradient{
+    visibility: visible;
+    opacity: 1;
+}
+
+.painting a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*-----------------------------------*/
+/*-----------Modal Image's-----------*/
+/*----------------------------------- margin-left: 19%;*/
+
+.modal {
+    position: fixed;
+    z-index: 10;
+    width: auto;
+    top: 2em;
+    left: 10em;
+    right: 10em;
+    bottom: 2em;
+    box-shadow: 50em 50em 0em 110em rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.is-open {
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-image:nth-of-type(1) {
+    position: none;
+    width: auto;
+    height: 100%;
+}
+
+.modal-close {
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    left: 5em;
+    top: -1em;
+    background: white;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 0;
+}
+
+.modal-close:hover {
+    background-color: #eaeaea;
+}
+
+/*-----------------------------------*/
+/*---------------Footer--------------*/
+/*-----------------------------------*/
+
+footer {
+    background-color: #404040;
+}
+
+.footer-nav {
+    float: left;
+    margin: 50px;
+    background-color: #404040;
+}
+
+.footer-media {
+    float: right;
+    margin: 50px;
+    background-color: #404040;
+}
+
+.footer-nav li,
+.footer-media li{
+    display: inline;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-nav a,
+.footer-media a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+.footer-media a {
+    transition: color .5s;
+}
+
+.footer-media a{
+    font-size: 30px;
+}
+
+.insta:hover{
+    color: #F56040;
+}
+.facebook:hover{
+    color: #3b5998;
+}
+.twitter:hover{
+    color: #00acee;
+}
+
+footer h5 {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 120px;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+/*-----------------------------------*/
+/*--------------Queries--------------*/
+/*-----------------------------------*/
+
+/* Ultra Wide Screen 2560px to 1440px  */
+@media only screen and (max-width: 2760px){
+    
+    .main-nav {
+        height: 8vh;
+    }
+    
+    .banner {
+        height: 15vh;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .art {
+        margin: 0 200px;
+    }
+    
+    .art-list img{
+        width: 500px;
+    }
+    
+    .modal-close {
+        left: 4em;
+    }
+}
+
+/* Wide Screens 2560px to 1440px  */
+@media only screen and (max-width: 2560px){
+    
+    .main-nav {
+        height: 10vh;
+    }
+    
+    .banner {
+        height: 30vh;
+    }
+    
+    .art {
+        margin: 0 200px;
+    }
+    
+    .art-list img{
+        width: 400px;
+    }
+    
+    .painting {
+        margin: 40px 20px;
+        vertical-align: middle;
+    }
+    
+    .modal-image:nth-of-type(1) {
+        height: 70%;
+    }
+    
+    .modal {
+        top: 5em;
+        left: 0em;
+        right: 0em;
+        bottom: -10em;
+    }
+    
+    .modal-close {
+        left: 2em;
+        top: -2em;
+    }
+    
+    .row {
+        margin: 0 10%;
+    }
+}
+
+/* Monitors 1440px to 1200px */
+@media only screen and (max-width: 1440px){
+    
+    .row {
+        margin: 0;
+    }
+    
+    .main-nav {
+        height: 6vh;
+    }
+    
+    .painting {
+        margin: 70px 10px;
+        vertical-align: middle;
+    }
+    
+    .banner {
+        height: 300px;
+    }
+    
+    .painting p,
+    .painting h3,
+    .painting a {
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+
+    .painting h3 {
+        top: 25%;
+        font-size: 30px;
+        width: 200px;
+    }
+
+    .painting a{
+        padding: 5px;
+    }
+
+    .painting p {
+        top: 50%;
+        width: 300px;
+    }
+}
+
+/* Laptops 1023 to 1200px */
+@media only screen and (max-width: 1200px) {
+    
+    .art {
+        margin: 0;
+        padding: 0 100px;
+    }
+    
+    section,
+    header,
+    footer {
+        width: 130%;
+    }
+    
+    .art-list img{
+        width: 400px;
+    }
+    
+    .painting p {
+        top: 48%;
+        font-size: 15px;
+        width: 80%;
+    }
+    
+    .modal {
+        top: 20%;
+        bottom: -30%;
+    }
+    
+    .modal-image:nth-of-type(1) {
+        height: 50%;
+    }
+    
+    .modal-close {
+        height: 75px;
+        width: 75px;
+        font-size: 50px;
+        left: 1em;
+        top: -1em;
+    }
+    
+}
+
+/* Landscaped Tablets 767 to 1023px */
+@media only screen and (max-width: 1023px) {
+    
+    .main-nav {
+        height: 10vh;
+    }
+    
+    
+    header h2 {
+        font-size: 50px;
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+    
+    .main-nav li {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    
+    .painting h3 {
+        width: 250px;
+    }
+}
+
+/* Phones and Small Tablets 480 to 767px */
+@media only screen and (max-width: 767px) {
+    
+    header h2 {
+        margin-top: 15px;
+        font-size: 40px;
+        margin-left: 85px;
+    }
+    
+    .main-nav li {
+        margin: 27px 60px 0px 0px;
+        font-size: 30px;
+    }
+    
+    .modal-image:nth-of-type(1) {
+        height: 40%;
+    }
+    
+    .modal {
+        bottom: -40em;
+    }
+    
+    .modal-close {
+        left: 1em;
+        top: -2em;
+    }
+    
+    .painting h3 {
+        margin-top: 0px;
+        font-size: 40px;
+        width: 330px;
+    }
+    
+    .painting p {
+        margin-top: 0px;
+        font-size: 27px;
+        width: 70%;
+    }
+}
+
+/* Small Tablets 480 to 767px */
+@media only screen and (max-width: 560px) {
+    
+    .modal-image:nth-of-type(1) {
+        height: 30%;
+    }
+}
+
+/* Small Phones 0 to 480px */
+@media only screen and (max-width: 480px) {
+    
+    .art {
+        padding: 0 5%;
+    }
+    
+    .main-nav {
+        height: 15vh;
+    }
+    
+    
+    header ul {
+        padding: 0;
+    }
+    
+    header h2 {
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 40px;
+    }
+    
+    .main-nav li {
+        margin: 30px 30px 0px 0px;
+    }
+    
+    .undergrad .banner h1,
+    .eve .banner h1,
+    .plants .banner h1{
+        padding-top: 100px;
+    }
+    
+    .eve .banner h1 {
+        font-size: 45px;
+    }
+    
+    .art-list img {
+        width: 350px;
+    }
+    
+    .painting h3 {
+        width: 100%;
+    }
+    
+    .painting p {
+        font-size: 20px;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .footer-nav {
+        margin: 30px;
+    }   
+    
+    .footer-media {
+        margin: 20px;
+    }
+    
+    footer h5 {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    .modal-image:nth-of-type(1) {
+        width: 100vw;
+        height: auto;
+    }
+    
+    .modal {
+        top: 5em;
+    }
+    
+    .modal-close {
+        left: .3em;
+        top: -2em;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+
+    
