@@ -484,6 +484,20 @@ footer h4 {
 
 /* Laptops 1660 to 1440 */
 @media only screen and (max-width: 1660px) {
+    
+    .series {
+        height: 450px;
+    }
+    
+    .series h3 {
+        margin-top: 364px;
+    }
+    
+    .as1 h3 {
+        margin-top: 363px;
+        padding: 25px 0;
+    }
+    
     .about-p {
         font-size: 17px;
     }
