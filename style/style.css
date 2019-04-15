@@ -737,8 +737,9 @@ footer h4 {
     
     .about-me p {
         text-indent: 20px;
+        font-weight: 600;
         font-size: 9.2px;
-        margin-left: 27%;
+        margin-left: 33%;
         margin-right: 10px;
         padding-top: 0px;
     }
@@ -882,13 +883,17 @@ footer h4 {
     }
     
     .about-p {
-        height: 200px;
+        height: 220px;
+    }
+    
+    .about-me img {
+        padding-top: 20px;
     }
     
     .about-me p {
         text-indent: 10px;
         font-size: 7px;
-        margin-left: 29%;
+        margin-left: 37%;
         margin-right: 10px;
         padding-top: 0px;
     }

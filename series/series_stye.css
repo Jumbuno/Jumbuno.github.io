@@ -149,16 +149,12 @@ header ul {
 /* ----------------Art---------------  4aaf75  */
 /*-----------------------------------*/
 
-.art {
-    margin: 0;
-}
-
 .art-list {
     text-align: center;
 }
 
 .art-list img{
-    width: 330px;
+    width: 300px;
 }
 
 .painting {
@@ -617,11 +613,11 @@ footer h5 {
     }
     
     .footer-nav {
-        margin: 30px;
+        margin: 15px 5px;
     }   
     
     .footer-media {
-        margin: 20px;
+        margin: 15px 5px;
     }
     
     footer h5 {
