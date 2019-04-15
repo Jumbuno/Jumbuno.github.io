@@ -803,8 +803,7 @@ footer h4 {
     .footer-nav {
         text-align: center;
         float: none;
-        margin: 50px;
-        width: 85%;
+        padding-left: 20px;
     }
     
     footer h4 {
@@ -941,7 +940,6 @@ footer h4 {
         width: 120%;
     }
 }
-
 
 
 /* Phones and Small Tablets 320px */
